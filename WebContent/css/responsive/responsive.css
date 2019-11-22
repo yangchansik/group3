@@ -47,8 +47,8 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar-toggler {
         border: 2px solid #fff;
-        color: #fff;
-        margin: 37px 0;
+        color: #6b8e23;
+        margin: 20px 0;
         -webkit-transition-duration: 500ms;
                 transition-duration: 500ms;
     }
@@ -57,7 +57,9 @@
     }
     #dorneNav {
         padding: 30px;
-        background-color: #341a79;
+     /*    background-color: #341a79; */
+     	background-color: #6b8e23;
+     
         box-shadow: 1px 9px 10px rgba(255, 255, 255, 0.15);
         border-radius: 0 0 3px 3px
     }
@@ -149,7 +151,7 @@
     }
     .navbar-toggler {
         border: 2px solid #fff;
-        color: #fff;
+        color: #6b8e23;
         margin: 37px 0;
         -webkit-transition-duration: 500ms;
                 transition-duration: 500ms;
@@ -159,7 +161,7 @@
     }
     #dorneNav {
         padding: 15px;
-        background-color: #341a79;
+        background-color: #6b8e23;
         box-shadow: 1px 9px 10px rgba(255, 255, 255, 0.15);
         border-radius: 0 0 3px 3px
     }
