@@ -1,3 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,9 +11,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Title -->
-    <title>Dorne - Directory &amp; Listing Template | Explore</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -50,7 +51,7 @@
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Breadcumb Area Start ***** -->
-    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/hero-1.jpg)">
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/hero.jpg)">
     </div>
     <!-- ***** Breadcumb Area End ***** -->
 
@@ -59,12 +60,11 @@
         <!-- Explore Search Area -->
         <div class="explore-search-area d-md-flex">
             <!-- Explore Search Form -->
-            <div class="explore-search-form">
-                <h6>What are you looking for?</h6>
+            <div class="explore-search-form" style = "background-color:#ffefd5; opacity:0.8">
+                <h6 style = "color:#6b8e23; ">어떤 지역으로 떠나고 싶으세요?</h6>
                 <!-- Tabs -->
                 <div class="nav nav-tabs" id="heroTab" role="tablist">
                     <a class="nav-item nav-link active" id="nav-places-tab" data-toggle="tab" href="#nav-places" role="tab" aria-controls="nav-places" aria-selected="true">Places</a>
-                    <a class="nav-item nav-link" id="nav-events-tab" data-toggle="tab" href="#nav-events" role="tab" aria-controls="nav-events" aria-selected="false">Events</a>
                 </div>
                 <!-- Tabs Content -->
                 <div class="tab-content" id="nav-tabContent">
@@ -85,78 +85,17 @@
                                 <option value="3">Catagories 3</option>
                                 <option value="3">Catagories 4</option>
                             </select>
-                            <select class="custom-select" id="price-range">
-                                <option selected>Price Range</option>
-                                <option value="1">$100 - $499</option>
-                                <option value="2">$500 - $999</option>
-                                <option value="3">$1000 - $4999</option>
-                                <option value="3">$5000+</option>
-                            </select>
-                            <select class="custom-select" id="proximity">
-                                <option selected>Proximity</option>
-                                <option value="1">Proximity 1</option>
-                                <option value="2">Proximity 2</option>
-                                <option value="3">Proximity 3</option>
-                                <option value="3">Proximity 4</option>
-                                <option value="3">Proximity 5</option>
-                            </select>
+                         
+ 
                             <div class="row mt-md-5 mt-0">
                                 <div class="col-12 col-xl-6">
                                     <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
+                                        <input type="checkbox" class="custom-control-input" >
                                         <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Accepts Credit Cards</span>
+                                        <span class="custom-control-description" style = "color: #6b8e23;">Accepts Credit Cards</span>
                                     </label>
                                 </div>
-                                <div class="col-12 col-xl-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Bike Parking</span>
-                                    </label>
-                                </div>
-                                <div class="col-12 col-xl-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Wireless Internet</span>
-                                    </label>
-                                </div>
-                                <div class="col-12 col-xl-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Reservations</span>
-                                    </label>
-                                </div>
-                                <div class="col-12 col-xl-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Privat Parking</span>
-                                    </label>
-                                </div>
-                                <div class="col-12 col-xl-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Smoking Area</span>
-                                    </label>
-                                </div>
-                                <div class="col-12 col-xl-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Wheelchair Accesible</span>
-                                    </label>
-                                </div>
-                                <div class="col-12 col-xl-6">
-                                    <label class="custom-control custom-checkbox mb-3">
-                                        <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Coupons</span>
-                                    </label>
-                                </div>
+                               
                             </div>
                             <button type="submit" class="btn dorne-btn mt-50 bg-white text-dark"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
                         </form>
@@ -199,11 +138,11 @@
                 </div>
             </div>
             
-            <!-- Explore Search Result -->
+            <!-- 후기들 + 지도로 찾기 할 때 후기 추천 -->
             <div class="explore-search-result">
                 <!-- Single Features Area -->
-                <div class="single-features-area">
-                    <img src="img/bg-img/feature-1.jpg" alt="">
+                <div class="single-features-area" >
+                    <img src="img/bg-img/review-1.jpg" alt=""  style ="height: 300px;">
                     <!-- Price -->
                     <div class="price-start">
                         <p>FROM $59/night</p>
