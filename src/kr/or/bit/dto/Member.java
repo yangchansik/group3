@@ -8,9 +8,7 @@ public class Member {	//회원
 	private String hp;
 	private int grade;
 	
-	
-	
-	
+
 	@Override
 	public String toString() {
 		return "Member [id=" + id + ", pwd=" + pwd + ", name=" + name + ", hp=" + hp + ", grade=" + grade + "]";

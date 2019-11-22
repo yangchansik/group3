@@ -403,7 +403,7 @@ ul {
  
 </style>
 
-<jsp:include page="common/top.jsp"></jsp:include>
+<jsp:include page="/common/top.jsp"></jsp:include>
 <body>
  <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/hero.jpg)"> 
  <section  style = "padding-top: 150px; padding-bottom:50px;">
@@ -779,5 +779,5 @@ ul {
 </section>
 </body>
 
-<jsp:include page="common/bottom.jsp"></jsp:include>
+<jsp:include page="/common/bottom.jsp"></jsp:include>
 </html>

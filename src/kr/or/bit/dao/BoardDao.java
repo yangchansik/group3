@@ -13,6 +13,7 @@ import javax.sql.DataSource;
 import kr.or.bit.dto.Board;
 import kr.or.bit.dto.BoardForReply;
 import kr.or.bit.dto.File;
+import kr.or.bit.utils.DB_Close;
 
 
 public class BoardDao {	
@@ -21,11 +22,13 @@ public class BoardDao {
 	public BoardDao() throws NamingException {
 		Context context = new InitialContext();
 		ds = (DataSource)context.lookup("java:comp/env/jdbc/oracle");
+
 	}
 
 	public int boardInsert(Board board) {   //글쓰기Dao
 		PreparedStatement pstmt =null;
 		Connection conn = null;
+		
 		String sql = "insert into board(idx, id, bcode, tcode, title, content, readnum, writedate, ref, dept, step, cocode) values(sequence.nextval,?,?,?,?,?,0,sysdate,?,0,0,0)";
 		int resultrow = 0;		
 		try {														
@@ -49,6 +52,9 @@ public class BoardDao {
 			try {
 				pstmt.close();
 				conn.close();//반환
+				
+			
+				
 			}catch (Exception e) {
 			}
 		}

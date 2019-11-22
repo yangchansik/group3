@@ -28,9 +28,6 @@
 
 
 
-
-
-
 <!------ Include the above in your HEAD tag ---------->
 
 
@@ -262,7 +259,7 @@ $(document).ready(function(){
     }
 });
 </script>
-<jsp:include page="common/top.jsp"></jsp:include>
+<jsp:include page="/common/top.jsp"></jsp:include>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dorneNav" aria-controls="dorneNav" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
 <body>
  <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/hero.jpg)"> 
@@ -392,5 +389,5 @@ $(document).ready(function(){
     </ul>
 </div>
 </body>
-<jsp:include page="common/bottom.jsp"></jsp:include>
+<jsp:include page="/common/bottom.jsp"></jsp:include>
 </html>

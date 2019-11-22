@@ -16,7 +16,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
  
 
@@ -253,8 +253,8 @@ $(document).ready(function() {
    })(jQuery, window, document);
 </script>
 
-s
-<jsp:include page="common/top.jsp"></jsp:include>
+
+<jsp:include page="/common/top.jsp"></jsp:include>
 <body>
 
  <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/hero.jpg)">

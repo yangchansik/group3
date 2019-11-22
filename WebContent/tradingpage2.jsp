@@ -45,7 +45,7 @@
 	
 		<body>
 
-		<jsp:include page="common/top.jsp"></jsp:include>
+		<jsp:include page="/common/top.jsp"></jsp:include>
 			
 			<!-- Start post Area -->
 			<section class="post-area section-gap" style="padding-top:100px;">
@@ -386,7 +386,7 @@
 			<script src="js/parallax.min.js"></script>		
 			<script src="js/mail-script.js"></script>	
 			<script src="js/main.js"></script>	
-		<jsp:include page="common/bottom.jsp"></jsp:include>
+		<jsp:include page="/common/bottom.jsp"></jsp:include>
 		</body>
 		
 	</html>

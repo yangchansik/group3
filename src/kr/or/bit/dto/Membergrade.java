@@ -14,8 +14,7 @@ public class Membergrade {	//회원 등급
 		return "Membergrade [grade=" + grade + ", gname=" + gname + "]";
 	}
 	
-	
-	
+
 	public int getGrade() {
 		return grade;
 	}

@@ -50,8 +50,8 @@
                                        <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Member<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="signup.jsp">SignUp</a>
-                                        <a class="dropdown-item" href="log-in.jsp">LOGIN</a>
+                                        <a class="dropdown-item" href="signUp.jsp">SignUp</a>
+                                        <a class="dropdown-item" href="logIn.jsp">LOGIN</a>
                                    
                                     </div>
                                 </li>

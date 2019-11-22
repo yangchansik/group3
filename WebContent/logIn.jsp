@@ -106,8 +106,8 @@ button{
 					<div id="formBtn">
 					<!-- 	<button type="submit" value="LOGIN" class="btn btn-skin btn-scroll">LOGIN</button>
 						<button type="reset" value="CANCEL" class="btn btn-skin btn-scroll">CANCEL</button> -->
-						<button class="btn dorne-btn" style ="width: 200px;">로그인</button>
-                        <button class="btn dorne-btn" style ="width: 200px;">메인으로</button>
+						<button class="btn dorne-btn" style ="width: 100px;">로그인</button>
+                        <button class="btn dorne-btn" style ="width: 100px;">메인으로</button>
 				
 				   </div>
 					
@@ -119,5 +119,6 @@ button{
 	</section>
 
 	<jsp:include page="/common/bottom.jsp"></jsp:include>
+	</div>
 </body>
 </html>
