@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
 <!-- ****** Footer Area Start ****** -->
     <footer class="dorne-footer-area">
         <div class="container-fluid">
@@ -6,7 +9,7 @@
                     <div class="footer-text">
                         <p>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> CAMPING EASY <i class="fa fa-heart-o" aria-hidden="true"></i> <a href="https://www.naver.com" target="_blank">site</a> 
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
@@ -34,3 +37,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyMURw5ImGMaVjNzUqr2j63eRvPoZo92E"></script>
     <!-- Active JS -->
     <script src="js/active.js"></script>
+    
+
+    </body>
+    </html>
+    

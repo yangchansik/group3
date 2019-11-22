@@ -26,9 +26,9 @@
     padding: 0;
 }
 
-#preloader {
+# preloader {
     overflow: hidden;
-    background-color: rgba(52, 26, 121, 0.99);
+    background-color: #6b8e23;
     height: 100%;
     left: 0;
     position: fixed;
@@ -294,7 +294,7 @@ li {
 }
 
 .section-heading.dark span {
-    background-color: #7643ea;
+    background-color: #6b8e23;
 }
 
 .section-heading.dark h4 {
@@ -310,7 +310,7 @@ li {
     font-size: 18px;
     right: 0;
     width: 40px;
-    background-color: #341a79;
+    background-color: #6b8e23;
     color: #fff;
     text-align: center;
     height: 40px;
@@ -351,13 +351,13 @@ li {
 }
 
 .bg-default {
-    background-color: #341a79;
+    background-color: #6b8e23;
 }
 
 .dorne-btn {
     min-width: 180px;
     height: 52px;
-    background-color: #7643ea;
+    background-color:  #6b8e23;
     border-radius: 0;
     padding: 0 15px;
     line-height: 50px;
@@ -371,7 +371,7 @@ li {
 .dorne-btn:hover,
 .dorne-btn:focus {
     color: #fff;
-    background-color: #5d25dd;
+    background-color: #deb887;
     font-weight: 600;
 }
 
@@ -382,7 +382,7 @@ li {
     position: fixed;
     z-index: 99999;
     height: 120px;
-    background-color: #341a79;
+    background-color: #6b8e23;
     top: -200px;
     left: 0;
     -webkit-transition-duration: 500ms;
@@ -487,7 +487,7 @@ li {
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-item.active .nav-link {
-    color: #7643ea;
+    color: #6b8e23;
 }
 
 .dorne-search-btn > a,
@@ -512,7 +512,7 @@ li {
 }
 
 .dropdown-item:hover {
-    background-color: #7643ea;
+    background-color: #6b8e23;
     color: #fff;
 }
 
@@ -568,13 +568,13 @@ li {
 
 .hero-search-form .nav-tabs .nav-link.active {
     color: #fff;
-    background-color: rgba(67, 25, 161, 0.65);
+    background-color: #6b8e23;
     border-color: transparent;
 }
 
 .hero-search-form .tab-content .tab-pane {
     padding: 35px;
-    background-color: rgba(67, 25, 161, 0.65);
+    background-color:blue;
 }
 
 .hero-search-form .tab-content .tab-pane h6 {
@@ -648,7 +648,7 @@ li {
 }
 
 .single-catagory-area {
-    background-color: #7643ea;
+    background-color: #6b8e23;
     text-align: center;
     padding: 60px 15px;
     -webkit-transition-duration: 500ms;
@@ -684,7 +684,7 @@ li {
 }
 
 .about-content span {
-    color: #7643ea;
+    color: #6b8e23;
 }
 
 .about-content p {
@@ -705,7 +705,7 @@ li {
     height: 70px;
     display: inline-block;
     line-height: 70px;
-    background-color: #7643ea;
+    background-color: #6b8e23;
     padding: 0 50px;
     font-size: 14px;
     text-transform: uppercase;
@@ -759,7 +759,7 @@ li {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: #7643ea;
+    background-color: #6b8e23;
     height: 35px;
     font-size: 12px;
     line-height: 35px;
@@ -791,12 +791,12 @@ li {
 }
 
 .feature-favourite > a {
-    color: #7643ea;
+    color: #6b8e23;
     font-size: 24px;
 }
 
 .single-features-area:hover {
-    background-color: #7643ea;
+    background-color: #6b8e23;
     box-shadow: 3px 15px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -813,7 +813,7 @@ li {
     color: #fff;
     height: 70px;
     line-height: 70px;
-    background-color: #7643ea;
+    background-color: #6b8e23;
 }
 
 .ratings-map-area > a:last-child {
@@ -872,7 +872,7 @@ li {
     font-weight: 800;
     color: #fff;
     height: 50px;
-    background-color: #7643ea;
+    background-color: #6b8e23;
     text-align: center;
 }
 
@@ -945,7 +945,7 @@ li {
 }
 
 .single-feature-events-area:hover {
-    background-color: #7643ea;
+    background-color: #6b8e23;
 }
 
 .single-feature-events-area:hover .feature-events-content h5,
@@ -1078,7 +1078,7 @@ li {
 }
 
 .explore-search-form {
-    background-color: #7643ea;
+    background-color: #6b8e23;
     padding: 50px 40px;
 }
 
@@ -1100,7 +1100,7 @@ li {
     font-size: 12px;
     font-weight: 700;
     color: #fff;
-    background-color: rgba(144, 103, 238, 0.65);
+    background-color:#bdb76b;
     text-transform: uppercase;
     min-width: 100px;
     height: 44px;
@@ -1111,7 +1111,7 @@ li {
 
 .explore-search-form .nav-tabs .nav-link.active {
     color: #fff;
-    background-color: rgba(67, 25, 161, 0.65);
+    background-color: #6b8e23;
     border-color: transparent;
 }
 
@@ -1135,7 +1135,7 @@ li {
 
 .explore-search-form .custom-control-description {
     font-size: 11px;
-    color: #fff;
+    color:#6b8e23;
     font-weight: 600;
     line-height: 24px;
 }
@@ -1178,22 +1178,22 @@ li {
 }
 
 .map-ratings-review-area > a:nth-child(2) {
-    background-color: #7643ea;
+    background-color: #6b8e23;
 }
 
 .map-ratings-review-area > a:last-child {
-    background-color: #fff;
+    background-color: #6b8e23;
     color: #2a2a2a;
 }
 
 .book-a-table-widget {
     padding: 50px 30px;
-    background-color: #7643ea;
+    background-color: #6b8e23;
 }
 
 .book-a-table-widget h6 {
     font-size: 18px;
-    color: #fff;
+    color: #6b8e23;
     margin-bottom: 30px;
 }
 
@@ -1230,7 +1230,7 @@ li {
 }
 
 .opening-hours li:first-child p {
-    color: #7643ea;
+    color: #6b8e23;
 }
 
 .opening-hours li:last-child p {
@@ -1309,11 +1309,11 @@ li {
 
 .single-listing-nav li.active a,
 .single-listing-nav li a:hover {
-    color: #7643ea;
+    color:#6b8e23;
 }
 
 .single-listing-nav li.active a:after {
-    background-color: #7643ea;
+    background-color:#6b8e23;
     content: '';
     bottom: -2px;
     left: 0;

@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +12,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Dorne - Directory &amp; Listing Template</title>
+    <title>Camping Easy</title>
 
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
@@ -21,6 +24,37 @@
     <link href="css/responsive/responsive.css" rel="stylesheet">
 
 </head>
+<style>
+.feature-content {
+    padding: 40px 30px;
+}
+
+.feature-content .feature-title h5 {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+}
+
+.feature-content .feature-title p {
+    font-size: 14px;
+    margin-bottom: 0;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+}
+
+.feature-content,
+.feature-favourite > a {
+    background-color: #6b8e23;
+}
+ #pp {
+ background-color: #6b8e23;
+
+}
+
+</style>
 
 <body>
     <!-- Preloader -->
@@ -50,36 +84,59 @@
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Welcome Area Start ***** -->
-    <section class="dorne-welcome-area bg-img bg-overlay" style="background-image: url(img/bg-img/hero-1.jpg);">
+    <section class="dorne-welcome-area bg-img" style="background-image: url(http://caravanpark.kr/photo/faci/09a09a398abc0028b2b40913f3a4e5c8.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center">
                 <div class="col-12 col-md-10">
                     <div class="hero-content">
-                        <h2>Discover places near you</h2>
-                        <h4>This is the best guide of your city</h4>
+                        <h2>CAMPING EASY</h2>
+                        <h4>Enjoy Your Camp</h4>
                     </div>
                     <!-- Hero Search Form -->
                     <div class="hero-search-form">
                         <!-- Tabs -->
                         <div class="nav nav-tabs" id="heroTab" role="tablist">
-                            <a class="nav-item nav-link active" id="nav-places-tab" data-toggle="tab" href="#nav-places" role="tab" aria-controls="nav-places" aria-selected="true">Places</a>
-                            <a class="nav-item nav-link" id="nav-events-tab" data-toggle="tab" href="#nav-events" role="tab" aria-controls="nav-events" aria-selected="false">Events</a>
+                            <a class="nav-item nav-link active" id="nav-places-tab" data-toggle="tab" href="#nav-places" role="tab" aria-controls="nav-places" aria-selected="true" style ="background-color:#6b8e23;">Places</a>
+                          <!--   <a class="nav-item nav-link" id="nav-events-tab" data-toggle="tab" href="#nav-events" role="tab" aria-controls="nav-events" aria-selected="false">Events</a> -->
                         </div>
                         <!-- Tabs Content -->
                         <div class="tab-content" id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="nav-places" role="tabpanel" aria-labelledby="nav-places-tab">
+                            <div class="tab-pane fade show active" id="nav-places" role="tabpanel" aria-labelledby="nav-places-tab" style ="background-color:#ffefd5; opacity:0.7">
+                                <h6 style ="color:#6b8e23;">캠핑장을 검색해서 찾아보세요</h6>
+                                <form action="#" method="get">
+                                    <select class="custom-select" style ="width: 200px;">
+                                        <option selected>지역 선택</option>
+                                        <option value="1">서울시</option>
+                                        <option value="2">경기도</option>
+                                        <option value="3">강원도</option>
+                                        <option value="4">충정도</option>
+                                        <option value="5">전라도</option>
+                                        <option value="5">경상도</option>
+                                    </select>
+                                    <select class="custom-select" style ="width: 200px;">
+                                        <option selected>시/군 선택</option>
+                                        <option value="1">블라블라</option>
+                                        <option value="2">블라블라2</option>
+                                        <option value="3">블라블라3</option>
+                                    </select>
+                                    <input type= "text" name="camping" id="camping" style ="width:200px; height:52px;">
+                                    <button type="submit" class="btn dorne-btn" style ="width: 200px; background-color:#6b8e23;"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
+                                </form>
+                            </div>
+                        <!--     <div class="tab-pane fade" id="nav-events" role="tabpanel" aria-labelledby="nav-events-tab">
                                 <h6>What are you looking for?</h6>
                                 <form action="#" method="get">
                                     <select class="custom-select">
-                                        <option selected>Your Destinations</option>
-                                        <option value="1">New York</option>
-                                        <option value="2">Latvia</option>
-                                        <option value="3">Dhaka</option>
-                                        <option value="4">Melbourne</option>
-                                        <option value="5">London</option>
+                                       <option selected>지역 선택</option>
+                                        <option value="1">서울시</option>
+                                        <option value="2">경기도</option>
+                                        <option value="3">강원도</option>
+                                        <option value="4">충정도</option>
+                                        <option value="5">전라도</option>
+                                        <option value="5">경상도</option>
                                     </select>
                                     <select class="custom-select">
-                                        <option selected>All Catagories</option>
+                                        <option selected>시/군 선택</option>
                                         <option value="1">Catagories 1</option>
                                         <option value="2">Catagories 2</option>
                                         <option value="3">Catagories 3</option>
@@ -92,33 +149,7 @@
                                     </select>
                                     <button type="submit" class="btn dorne-btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
                                 </form>
-                            </div>
-                            <div class="tab-pane fade" id="nav-events" role="tabpanel" aria-labelledby="nav-events-tab">
-                                <h6>What are you looking for?</h6>
-                                <form action="#" method="get">
-                                    <select class="custom-select">
-                                        <option selected>Your Destinations</option>
-                                        <option value="1">New York</option>
-                                        <option value="2">Latvia</option>
-                                        <option value="3">Dhaka</option>
-                                        <option value="4">Melbourne</option>
-                                        <option value="5">London</option>
-                                    </select>
-                                    <select class="custom-select">
-                                        <option selected>All Catagories</option>
-                                        <option value="1">Catagories 1</option>
-                                        <option value="2">Catagories 2</option>
-                                        <option value="3">Catagories 3</option>
-                                    </select>
-                                    <select class="custom-select">
-                                        <option selected>Price Range</option>
-                                        <option value="1">$100 - $499</option>
-                                        <option value="2">$500 - $999</option>
-                                        <option value="3">$1000 - $4999</option>
-                                    </select>
-                                    <button type="submit" class="btn dorne-btn"><i class="fa fa-search pr-2" aria-hidden="true"></i> Search</button>
-                                </form>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -141,7 +172,7 @@
     </section>
     <!-- ***** Welcome Area End ***** -->
 
-    <!-- ***** Catagory Area Start ***** -->
+       <!-- ***** Catagory Area Start ***** -->
     <section class="dorne-catagory-area">
         <div class="container">
             <div class="row">
@@ -149,56 +180,56 @@
                     <div class="all-catagories">
                         <div class="row">
                             <!-- Single Catagory Area -->
-                            <div class="col-12 col-sm-6 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.2s">
+                            <div class="col-12 col-sm-6 col-md" >
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.2s" style = "background-color: #696969; opacity:0.7">
                                     <div class="catagory-content">
-                                        <img src="img/core-img/icon-1.png" alt="">
+                                        <img src="img/core-img/icon11.png" alt=""> 
                                         <a href="#">
-                                            <h6>Hotels</h6>
+                                            <h6>Tent</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Single Catagory Area -->
+                            <div class="col-12 col-sm-6 col-md">
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.4s" style = "background-color: #bdb76b; opacity:0.8">
+                                    <div class="catagory-content">
+                                        <img src="img/core-img/icon12.png" alt="">
+                                        <a href="#">
+                                            <h6>Map</h6>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <!-- Single Catagory Area -->
                             <div class="col-12 col-sm-6 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.4s">
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.6s" style = "background-color: #696969; opacity:0.7">
                                     <div class="catagory-content">
-                                        <img src="img/core-img/icon-2.png" alt="">
+                                        <img src="img/core-img/icon13.png" alt="">
                                         <a href="#">
-                                            <h6>Restaurants</h6>
+                                            <h6>CampFire</h6>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <!-- Single Catagory Area -->
                             <div class="col-12 col-sm-6 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.6s">
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.8s" style = "background-color:  #bdb76b; opacity:0.8">
                                     <div class="catagory-content">
-                                        <img src="img/core-img/icon-3.png" alt="">
+                                        <img src="img/core-img/icon14.png" alt="">
                                         <a href="#">
-                                            <h6>Shopping</h6>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Catagory Area -->
-                            <div class="col-12 col-sm-6 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="0.8s">
-                                    <div class="catagory-content">
-                                        <img src="img/core-img/icon-4.png" alt="">
-                                        <a href="#">
-                                            <h6>Beauty &amp; Spa</h6>
+                                            <h6>Mountain</h6>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <!-- Single Catagory Area -->
                             <div class="col-12 col-md">
-                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="1s">
+                                <div class="single-catagory-area wow fadeInUpBig" data-wow-delay="1s" style = "background-color:  #696969; opacity:0.7">
                                     <div class="catagory-content">
-                                        <img src="img/core-img/icon-5.png" alt="">
+                                        <img src="img/core-img/icon15.png" alt="">
                                         <a href="#">
-                                            <h6>Cinema</h6>
+                                            <h6>Fishing</h6>
                                         </a>
                                     </div>
                                 </div>
@@ -211,14 +242,14 @@
     </section>
     <!-- ***** Catagory Area End ***** -->
 
-    <!-- ***** About Area Start ***** -->
+   <!-- ***** About Area Start ***** -->
     <section class="dorne-about-area section-padding-0-100">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="about-content text-center">
-                        <h2>Discover your city with <br><span>Dorne</span></h2>
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce quis tempus elit. Sed efficitur tortor neque, vitae aliquet urna varius sit amet. Ut rhoncus, nunc nec tincidunt volutpat, ex libero.</p>
+                        <h2  style ="color:#6b8e23;">CAMPING EASY? <br><span  style ="color:#bdb76b;">캠핑이지!!!</span></h2>
+                        <p>'캠핑이지'는 캠핑을 하려는 사람에게 캠핑을 쉽게 즐길 수 있도록 안내하는 사이트입니다. <br> 주요 기능은 캠핑지 정보제공, 날씨정보제공, 이용자들의 캠핑지 후기, 캠핑용품 중고거래 등이 있습니다.</p>
                     </div>
                 </div>
             </div>
@@ -226,15 +257,14 @@
     </section>
     <!-- ***** About Area End ***** -->
 
-    <!-- ***** Editor Pick Area Start ***** -->
-    <section class="dorne-editors-pick-area bg-img bg-overlay-9 section-padding-100" style="background-image: url(img/bg-img/hero-2.jpg);">
+    <!-- ***** 추천 캠핑장 & 공지사항 & 날씨 시작***** -->
+    <section class="dorne-editors-pick-area bg-img section-padding-100" style="background-image: url(http://mblogthumb1.phinf.naver.net/MjAxNzEwMTZfOTcg/MDAxNTA4MTYyMTAwODI0.QRvsY2sSgD-9NVXyJYgMT6Y6H06d72qRUZcdUYK6-eMg.9oaj157RFr-wYHQqQ1doX858CM3UxwiHVlLLzAMvtKkg.PNG.crystal0121/%EC%97%AC%EC%A3%BC_%EB%91%90%EB%A6%AC%EC%BA%A0%ED%95%91%EC%9E%A5_%2829%29.png?type=w800);">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading text-center">
                         <span></span>
-                        <h4>Cities you must see</h4>
-                        <p>Editor’s pick</p>
+                        <h4>Contents</h4>
                     </div>
                 </div>
             </div>
@@ -242,58 +272,52 @@
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.2s">
-                        <img src="img/bg-img/editor-1.jpg" alt="">
-                        <div class="editors-pick-info">
+                        <a href="#"><img src="http://www.yonleejee.com/news/photo/201906/559_818_649.jpg" alt="" style ="height:560px;"></a> <!-- width="100" height="100" -->
+                      <div class="editors-pick-info">
                             <div class="places-total-destinations d-flex">
-                                <a href="#">New York</a>
-                                <a href="#">1643 Destinations</a>
+                                <a href="#" style = "background-color:#6b8e23;">오늘의 추천 캠핑장</a>
+                                <a href="#" style = "background-color:#bdb76b;">난지 캠핑장</a>
                             </div>
-                            <div class="add-more">
-                                <a href="#">+</a>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.4s">
-                        <img src="img/bg-img/editor-2.jpg" alt="">
+                        <a href="#"><img src="img/bg-img/2.jpg" alt="" style ="width:500px; height:240px;"></a>
                         <div class="editors-pick-info">
                             <div class="places-total-destinations d-flex">
-                                <a href="#">Barcelona</a>
-                                <a href="#">943 Destinations</a>
+                                <a href="#" style = "background-color:#6b8e23;">Notice</a>
+                                <a href="#" style = "background-color:#bdb76b;">오늘의 공지사항</a>
                             </div>
-                            <div class="add-more">
-                                <a href="#">+</a>
-                            </div>
+                           
                         </div>
                     </div>
                     <div class="single-editors-pick-area wow fadeInUp" data-wow-delay="0.6s">
-                        <img src="img/bg-img/editor-3.jpg" alt="">
+                       <a href="#"><img src="img/bg-img/3.jpg" alt="" style ="height:300px; width:500px;"></a>
                         <div class="editors-pick-info">
                             <div class="places-total-destinations d-flex">
-                                <a href="#">paris</a>
-                                <a href="#">243 Destinations</a>
+                                <a href="#" style = "background-color:#6b8e23;">Weather</a>
+                                <a href="#" style = "background-color:#bdb76b;">오늘의 날씨</a>
                             </div>
-                            <div class="add-more">
-                                <a href="#">+</a>
-                            </div>
+                        
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ***** Editor Pick Area End ***** -->
+    <!-- ***** 추천 캠핑장 & 공지사항 & 날씨 끝 ***** -->
 
-    <!-- ***** Features Destinations Area Start ***** -->
+    <!-- ***** 메인페이지  : 후기 시작 ***** -->
     <section class="dorne-features-destinations-area">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading dark text-center">
                         <span></span>
-                        <h4>Featured destinations</h4>
-                        <p>Editor’s pick</p>
+                        <h4>Review</h4>
+                        <p>캠핑장 다녀온 후기</p>
                     </div>
                 </div>
             </div>
@@ -303,13 +327,13 @@
                     <div class="features-slides owl-carousel">
                         <!-- Single Features Area -->
                         <div class="single-features-area">
-                            <img src="img/bg-img/feature-1.jpg" alt="">
+                            <img src="img/bg-img/feature-2.jpg" alt="">
                             <!-- Price -->
-                            <div class="price-start">
-                                <p>FROM $59/night</p>
+                            <div class="price-start" >
+                                <p id ="pp">FROM $59/night</p>
                             </div>
-                            <div class="feature-content d-flex align-items-center justify-content-between">
-                                <div class="feature-title">
+                            <div class="feature-content d-flex align-items-center justify-content-between" >
+                                <div class="feature-title" >
                                     <h5>Ibiza</h5>
                                     <p>Party</p>
                                 </div>
@@ -323,7 +347,7 @@
                             <img src="img/bg-img/feature-2.jpg" alt="">
                             <!-- Price -->
                             <div class="price-start">
-                                <p>FROM $59/night</p>
+                                <p id ="pp">FROM $59/night</p>
                             </div>
                             <div class="feature-content d-flex align-items-center justify-content-between">
                                 <div class="feature-title">
@@ -340,7 +364,7 @@
                             <img src="img/bg-img/feature-3.jpg" alt="">
                             <!-- Price -->
                             <div class="price-start">
-                                <p>FROM $59/night</p>
+                                <p id ="pp">FROM $59/night</p>
                             </div>
                             <div class="feature-content d-flex align-items-center justify-content-between">
                                 <div class="feature-title">
@@ -357,7 +381,7 @@
                             <img src="img/bg-img/feature-4.jpg" alt="">
                             <!-- Price -->
                             <div class="price-start">
-                                <p>FROM $59/night</p>
+                                <p id ="pp">FROM $59/night</p>
                             </div>
                             <div class="feature-content d-flex align-items-center justify-content-between">
                                 <div class="feature-title">
@@ -374,7 +398,7 @@
                             <img src="img/bg-img/feature-5.jpg" alt="">
                             <!-- Price -->
                             <div class="price-start">
-                                <p>FROM $59/night</p>
+                                <p id ="pp">FROM $59/night</p>
                             </div>
                             <div class="feature-content d-flex align-items-center justify-content-between">
                                 <div class="feature-title">
@@ -391,10 +415,10 @@
             </div>
         </div>
     </section>
-    <!-- ***** Features Destinations Area End ***** -->
+    <!-- ***** 메인페이지  : 후기 끝 ***** -->
 
     <!-- ***** Features Restaurant Area Start ***** -->
-    <section class="dorne-features-restaurant-area bg-default">
+   <!--  <section class="dorne-features-restaurant-area bg-default">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -409,10 +433,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="features-slides owl-carousel">
-                        <!-- Single Features Area -->
+                        Single Features Area
                         <div class="single-features-area">
                             <img src="img/bg-img/feature-6.jpg" alt="">
-                            <!-- Rating & Map Area -->
+                            Rating & Map Area
                             <div class="ratings-map-area d-flex">
                                 <a href="#">8.5</a>
                                 <a href="#"><img src="img/core-img/map.png" alt=""></a>
@@ -427,10 +451,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Features Area -->
+                        Single Features Area
                         <div class="single-features-area">
                             <img src="img/bg-img/feature-7.jpg" alt="">
-                            <!-- Rating & Map Area -->
+                            Rating & Map Area
                             <div class="ratings-map-area d-flex">
                                 <a href="#">9.5</a>
                                 <a href="#"><img src="img/core-img/map.png" alt=""></a>
@@ -445,10 +469,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Features Area -->
+                        Single Features Area
                         <div class="single-features-area">
                             <img src="img/bg-img/feature-8.jpg" alt="">
-                            <!-- Rating & Map Area -->
+                            Rating & Map Area
                             <div class="ratings-map-area d-flex">
                                 <a href="#">8.2</a>
                                 <a href="#"><img src="img/core-img/map.png" alt=""></a>
@@ -463,10 +487,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Features Area -->
+                        Single Features Area
                         <div class="single-features-area">
                             <img src="img/bg-img/feature-9.jpg" alt="">
-                            <!-- Rating & Map Area -->
+                            Rating & Map Area
                             <div class="ratings-map-area d-flex">
                                 <a href="#">8.7</a>
                                 <a href="#"><img src="img/core-img/map.png" alt=""></a>
@@ -481,10 +505,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Single Features Area -->
+                        Single Features Area
                         <div class="single-features-area">
                             <img src="img/bg-img/feature-10.jpg" alt="">
-                            <!-- Rating & Map Area -->
+                            Rating & Map Area
                             <div class="ratings-map-area d-flex">
                                 <a href="#">9.8</a>
                                 <a href="#"><img src="img/core-img/map.png" alt=""></a>
@@ -503,11 +527,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ***** Features Restaurant Area End ***** -->
 
     <!-- ***** Features Events Area Start ***** -->
-    <section class="dorne-features-events-area bg-img bg-overlay-9 section-padding-100-50" style="background-image: url(img/bg-img/hero-3.jpg)">
+    <!-- <section class="dorne-features-events-area bg-img bg-overlay-9 section-padding-100-50" style="background-image: url(img/bg-img/hero-3.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -636,11 +660,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ***** Features Events Area End ***** -->
 
     <!-- ***** Clients Area Start ***** -->
-    <div class="dorne-clients-area section-padding-100">
+<!--     <div class="dorne-clients-area section-padding-100">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -654,7 +678,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- ***** Clients Area End ***** -->
 
     <!-- ****** Footer Area Start ****** -->
