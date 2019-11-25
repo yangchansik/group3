@@ -2,6 +2,7 @@ package kr.or.bit.controller;
 
 import java.io.IOException;
 
+import javax.naming.NamingException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,7 +14,11 @@ import kr.or.bit.action.Action;
 import kr.or.bit.action.ActionForward;
 import kr.or.bit.service.DetailCrossService;
 import kr.or.bit.service.ListCrossService;
+import kr.or.bit.service.LoginService;
+import kr.or.bit.service.LogoutService;
+import kr.or.bit.service.SignUpService;
 import kr.or.bit.service.ZzimListService;
+
 
 
 
@@ -43,7 +48,12 @@ public class FrontController extends HttpServlet {
        }else if(url_Command.equals("/CampinglistCrossCK.do")) { // 캠핑 API list cross체크 처리
           //UI처리 + 로직처리 
          action = new ListCrossService();
-          forward = action.execute(request, response);
+          try {
+			forward = action.execute(request, response);
+		} catch (NamingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
           System.out.println("캠핑API 서비스 갔다왔어요. 지금은 CONTROLLER ");
        }else if(url_Command.equals("/CampingListview.do")) {
           //UI처리 
@@ -52,8 +62,41 @@ public class FrontController extends HttpServlet {
        }else if(url_Command.equals("/CampingDetailCrossCK.do")) { // 캠핑 API detail cross체크 처리
           //UI처리 + 로직처리
           action = new DetailCrossService();
-          forward = action.execute(request, response);
+          try {
+			forward = action.execute(request, response);
+		} catch (NamingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
           System.out.println("캠핑API 서비스 갔다왔어요. 지금은 CONTROLLER ");
+       }else if(url_Command.equals("/SignUp.do")) { //양찬식 함수에 else if문 추가
+           forward = new ActionForward();
+           forward.setPath("/signUp.jsp");
+       }else if(url_Command.equals("/SingUpOk.do")) {
+       	action = new SignUpService();
+			try {
+				forward = action.execute(request, response);
+			} catch (NamingException e) {
+				e.printStackTrace();
+			}
+           
+       }else if(url_Command.equals("/LogIn.do")) {
+           forward = new ActionForward();
+           forward.setPath("/logIn.jsp");
+        }else if(url_Command.equals("/LoginOk.do")) {
+        	action = new LoginService();
+			try {
+				forward = action.execute(request, response);
+			} catch (NamingException e) {
+				e.printStackTrace();
+			}
+         }else if(url_Command.equals("/LogOut.do")) {
+ 			action = new LogoutService();
+ 			try {
+				forward = action.execute(request, response);
+			} catch (NamingException e) {
+				e.printStackTrace();
+			}
        }else if(url_Command.equals("/ZzimListSearch.do")) { // 캠핑 API detail cross체크 처리
            //UI처리 + 로직처리
            action = new ZzimListService();
@@ -61,9 +104,13 @@ public class FrontController extends HttpServlet {
            System.out.println("찜리스트 검색중");
         }
        
+         }
        
        
-       
+    	   
+    	   
+    	   
+    	   
        if(forward != null) {
 
              RequestDispatcher dis = request.getRequestDispatcher(forward.getPath());
