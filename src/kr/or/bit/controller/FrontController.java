@@ -18,7 +18,8 @@ import kr.or.bit.service.LoginService;
 import kr.or.bit.service.LogoutService;
 import kr.or.bit.service.SignUpService;
 import kr.or.bit.service.ZzimListService;
-
+import kr.or.bit.service.ReviewListService;
+import kr.or.bit.service.ReviewWriteService;
 
 
 
@@ -102,7 +103,24 @@ public class FrontController extends HttpServlet {
            action = new ZzimListService();
            forward = action.execute(request, response);
            System.out.println("찜리스트 검색중");
-        }
+        }else if(url_Command.equals("/ReviewAdd.do")) {  //@function : 후기글쓰기  @Date : 2019-11-24 @Author : 배인영
+           //UI처리 + 로직처리
+    	   System.out.println("여기오나요?");
+           action = new ReviewWriteService();
+           forward = action.execute(request, response);   
+       }else if(url_Command.equals("/ReviewList.do")) {  //@function : 후기리스트  @Date : 2019-11-24 @Author : 배인영
+           //UI처리 + 로직처리
+    	   action = new ReviewListService();
+    	   forward = action.execute(request, response);
+       }else if(url_Command.equals("/ShowReviewWrite.do")) { //@function : 후기 글쓰기 페이지 view단  @Date : 2019-11-24 @Author : 배인영
+           //UI처리
+    	   forward = new ActionForward();
+           forward.setPath("/review_write.jsp");
+       }else if(url_Command.equals("/ShowrReviewDetail.do")) {//@function : 후기 글쓰기 페이지 view단  @Date : 2019-11-24 @Author : 배인영
+           //UI처리 + 로직처리
+    	   action = new ReviewListService();
+    	   forward = action.execute(request, response);
+       }
        
          }
        
