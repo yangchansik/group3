@@ -17,6 +17,8 @@ import kr.or.bit.service.ListCrossService;
 import kr.or.bit.service.LoginService;
 import kr.or.bit.service.LogoutService;
 import kr.or.bit.service.SignUpService;
+import kr.or.bit.service.ZzimListService;
+
 
 
 
@@ -42,7 +44,7 @@ public class FrontController extends HttpServlet {
        if(url_Command.equals("/MainCampingview.do")) { // Camping 검색 : main > list 
           //UI처리 
           forward = new ActionForward();
-          forward.setPath("/Test.jsp");
+          forward.setPath("/searchresult.jsp");
        }else if(url_Command.equals("/CampinglistCrossCK.do")) { // 캠핑 API list cross체크 처리
           //UI처리 + 로직처리 
          action = new ListCrossService();
@@ -95,6 +97,12 @@ public class FrontController extends HttpServlet {
 			} catch (NamingException e) {
 				e.printStackTrace();
 			}
+       }else if(url_Command.equals("/ZzimListSearch.do")) { // 캠핑 API detail cross체크 처리
+           //UI처리 + 로직처리
+           action = new ZzimListService();
+           forward = action.execute(request, response);
+           System.out.println("찜리스트 검색중");
+        }
        
          }
        
