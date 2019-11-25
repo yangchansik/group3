@@ -18,11 +18,7 @@
                                     <a class="nav-link" href="index.jsp">Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search<i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="index.jsp">캠핑장 찾기</a>
-                                        <a class="dropdown-item" href="explore.jsp">지도로 찾기</a>
-                                    </div>
+                                    <a class="nav-link" href="MainCampingview.do">Search</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Review<i class="fa fa-angle-down" aria-hidden="true"></i></a>
