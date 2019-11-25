@@ -418,7 +418,7 @@
     <!-- ***** 메인페이지  : 후기 끝 ***** -->
 
     <!-- ***** Features Restaurant Area Start ***** -->
-   <!--  <section class="dorne-features-restaurant-area bg-default">
+    <section class="dorne-features-restaurant-area bg-default">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -678,7 +678,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div> 
     <!-- ***** Clients Area End ***** -->
 
     <!-- ****** Footer Area Start ****** -->

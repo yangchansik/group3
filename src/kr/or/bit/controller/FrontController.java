@@ -13,6 +13,8 @@ import kr.or.bit.action.Action;
 import kr.or.bit.action.ActionForward;
 import kr.or.bit.service.DetailCrossService;
 import kr.or.bit.service.ListCrossService;
+import kr.or.bit.service.ReviewListService;
+import kr.or.bit.service.ReviewWriteService;
 
 
 
@@ -53,17 +55,33 @@ public class FrontController extends HttpServlet {
           action = new DetailCrossService();
           forward = action.execute(request, response);
           System.out.println("캠핑API 서비스 갔다왔어요. 지금은 CONTROLLER ");
+       }else if(url_Command.equals("/ReviewAdd.do")) {  //@function : 후기글쓰기  @Date : 2019-11-24 @Author : 배인영
+           //UI처리 + 로직처리
+    	   System.out.println("여기오나요?");
+           action = new ReviewWriteService();
+           forward = action.execute(request, response);   
+       }else if(url_Command.equals("/ReviewList.do")) {  //@function : 후기리스트  @Date : 2019-11-24 @Author : 배인영
+           //UI처리 + 로직처리
+    	   action = new ReviewListService();
+    	   forward = action.execute(request, response);
+       }else if(url_Command.equals("/ShowReviewWrite.do")) { //@function : 후기 글쓰기 페이지 view단  @Date : 2019-11-24 @Author : 배인영
+           //UI처리
+    	   forward = new ActionForward();
+           forward.setPath("/review_write.jsp");
+       }else if(url_Command.equals("/ShowrReviewDetail.do")) {//@function : 후기 글쓰기 페이지 view단  @Date : 2019-11-24 @Author : 배인영
+           //UI처리 + 로직처리
+    	   action = new ReviewListService();
+    	   forward = action.execute(request, response);
        }
        
        
        
        
-       if(forward != null) {
-
-             RequestDispatcher dis = request.getRequestDispatcher(forward.getPath());
-             dis.forward(request, response);
-          
-       }
+       	if(forward != null) {
+    			RequestDispatcher dis = request.getRequestDispatcher(forward.getPath()); // 경로를 지정하겠다. 
+    			dis.forward(request, response); // 지정한 경로로 제어권 넘김. 
+    		
+    	}
        
    }
    
